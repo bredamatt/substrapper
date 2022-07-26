@@ -14,8 +14,8 @@ So tweak this to fit your particular use case.
 ### Recommended instance configuration
 
 On AWS you can compare various instance configurations here:
-    https://aws.amazon.com/ec2/instance-explorer/
-    https://calculator.aws/#/addService/EC2?nc2=h_ql_pr_calc
+* https://aws.amazon.com/ec2/instance-explorer/
+* https://calculator.aws/#/addService/EC2?nc2=h_ql_pr_calc
 
 To actually get set up on AWS you will need an account, and can then get started 
 setting up an instance. In general, I look for the regions where instances are
