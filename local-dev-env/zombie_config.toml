@@ -16,5 +16,5 @@ id = 100
 
   [parachains.collator]
   name = "collator01"
-  image = "paritypr/colander:4131-ccd09bbf"
+  image = "paritypr/colander:master"
   command = "adder-collator"
