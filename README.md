@@ -185,9 +185,10 @@ Now you can try compiling inside the repo using the fast profile set up above:
     cargo build --profile=fast
     cargo run --profile=fast -- --dev
 
-### Remote editing with Visual Studio Code
+### Remote editing with Visual Studio Code running locally
 
 Set up the VSCode remote development extensions. See the following:
+
 * https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 * https://code.visualstudio.com/docs/remote/troubleshooting
 
@@ -195,3 +196,16 @@ With this set up you will be able to click the icon in the left bar, that will s
 hosts configured in your `~/.ssh/config` file that you can connect to. Note that you will need to 
 change the IP address in your .ssh/config file every time you restart your AWS instance.
 
+### Remote editing with Visual Studio Code running remotely
+
+You may find that running Visual Studio Code locally with Rust analyzer is too slow or too taxing
+on your machine. There is another option: You can use Visual Studio Code for the web. See:
+
+* https://code.visualstudio.com/docs/editor/vscode-web
+
+You will need to have your code on GitHub in order to do this. Visual Studio Code for the web will
+check the code out from GitHub to its local workspace and allow you to edit there and push back
+to GitHub. You will then need to pull from GitHub to your AWS instance to fetch your latest edits
+so that you can build them. Note that Visual Studio Code for the web is set up with some features
+for Rust such that you can navigate Rust code with Outline/Go to Symbol and Symbol Search; there is
+also text-basd completion, code syntax colorization, and bracket pair colorization.
